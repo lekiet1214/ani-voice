@@ -67,3 +67,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 [![Python application](https://github.com/lekiet1214/ani-voice/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/lekiet1214/ani-voice/actions/workflows/python-app.yml)
 [![pages-build-deployment](https://github.com/lekiet1214/ani-voice/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/lekiet1214/ani-voice/actions/workflows/pages/pages-build-deployment)
+[![CodeQL](https://github.com/lekiet1214/ani-voice/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/lekiet1214/ani-voice/actions/workflows/github-code-scanning/codeql)
