@@ -64,3 +64,6 @@ python main.py
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+[![Python application](https://github.com/lekiet1214/ani-voice/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/lekiet1214/ani-voice/actions/workflows/python-app.yml)
+[![pages-build-deployment](https://github.com/lekiet1214/ani-voice/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/lekiet1214/ani-voice/actions/workflows/pages/pages-build-deployment)
