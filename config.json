@@ -1,4 +1,5 @@
 {
     "language": "ja",
-    "speaker": "1"
+    "speaker": "1",
+    "voice_vox_path": "F:/voicevox_engine-windows-nvidia-0.14.4.7z/windows-nvidia"
 }

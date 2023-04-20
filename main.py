@@ -3,6 +3,8 @@ import audio_to_text
 import translate_text
 import text_to_voice
 import play_audio
+import json
+import subprocess
 
 audio_record = 'audio_record.wav'
 audio_translated = 'audio_translated.wav'
@@ -208,6 +210,16 @@ chunk = 1024
 #         raise RuntimeError('Error during playback: ' + str(status))
 
 if __name__ == '__main__':
+
+    # Start the voicevox engine
+    # with open('config.json', 'r') as f:
+    #     config = json.load(f)
+    # try:
+    #     voicevox_engine = subprocess.Popen(config['voice_vox_path'] + 'run.exe', shell=True)
+    #     print('Voicevox engine started')
+    # except Exception as e:
+    #     raise type(e)(str(e))
+
     record_audio.record_audio(audio_record)
     audio_to_text.audio_to_text(audio_record, text_not_translated)
     translate_text.translate_text(text_not_translated, text_translated)
