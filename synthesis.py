@@ -2,7 +2,12 @@ import requests
 import json
 
 def synthesis(filename, data):
-    url = 'http://localhost:50021/synthesis?speaker=1'
+
+    # load config file
+    with open('config.json', 'r') as f:
+        config = json.load(f)
+
+    url = f'http://localhost:50021/synthesis?speaker={config["speaker"]}'
 
     # load json data
     with open(data, "r", encoding="utf-8") as f:

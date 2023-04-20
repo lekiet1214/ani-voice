@@ -1,12 +1,18 @@
 from mtranslate import translate
+import json
 
 def translate_text(input, filename):
     # read text
     with open(input, 'r', encoding='utf-8') as f:
         text = f.read()
 
+    # Read config file
+    with open('config.json', 'r') as f:
+        config = json.load(f)
+
+
     # translate text to Japanese
-    translation = translate(text, 'ja')
+    translation = translate(text, config['language'])
 
     # write translated text to file
     with open(filename, 'w', encoding='UTF-8') as f:

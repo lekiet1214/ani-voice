@@ -11,9 +11,11 @@ And also translate your voice into Japanese.
 
 - Windows 11 or later
 
-- Python 11.0 or later
+- Python 11.0 or later. Get it from [here](https://www.python.org/downloads/)
 
-- VB-CABLE Virtual Audio Device
+- VB-CABLE Virtual Audio Device. Get it from [here](https://vb-audio.com/Cable/)
+
+- VOICEVOX engine. Get it from [here](https://github.com/VOICEVOX/voicevox_engine/releases/tag/0.14.4)
 
 Note that this software is not tested on other platforms.
 
@@ -31,8 +33,23 @@ pip install -r requirements.txt
 
 By default, this software will use the first audio device as input and the VB-CABLE device as output.
 
+First, run the VOICEVOX engine.
+
+Then, run the software.
+
 ```bash
 python main.py
+```
+
+### Configuration
+
+You can change the speaker by changing the configuration file.
+Refer to the [speaker file](speakers.json) for more information.
+
+```json
+{
+    "speaker": "speaker_id"
+}
 ```
 
 ## Contributing
