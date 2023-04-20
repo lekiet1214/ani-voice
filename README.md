@@ -23,6 +23,10 @@ Note that this software is not tested on other platforms.
 
 1. Clone this repository
 
+```bash
+git clone https://github.com/lekiet1214/ani-voice.git
+```
+
 2. Install dependencies
 
 ```bash
