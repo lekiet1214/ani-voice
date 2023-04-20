@@ -29,21 +29,18 @@ Note that this software is not tested on other platforms.
 pip install -r requirements.txt
 ```
 
-### Usage
-
-By default, this software will use the first audio device as input and the VB-CABLE device as output.
-
-First, run the VOICEVOX engine.
-
-Then, run the software.
-
-```bash
-python main.py
-```
-
 ### Configuration
 
-You can change the speaker by changing the configuration file.
+Put the path to voicevox engine in the configuration file.
+Note that the path should be absolute path, pointing to the directory containing the `run.exe` file.
+
+```json
+{
+    "voice_vox_path": "path/to/voicevox"
+}
+```
+
+You can also change the speaker by changing the configuration file.
 Refer to the [speaker file](speakers.json) for more information.
 
 ```json
@@ -52,9 +49,14 @@ Refer to the [speaker file](speakers.json) for more information.
 }
 ```
 
+### Usage
+
+By default, this software will use the first audio device as input and the VB-CABLE device as output.
+
+```bash
+python main.py
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-
-

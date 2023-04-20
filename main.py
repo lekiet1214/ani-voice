@@ -212,13 +212,17 @@ chunk = 1024
 if __name__ == '__main__':
 
     # Start the voicevox engine
-    # with open('config.json', 'r') as f:
-    #     config = json.load(f)
-    # try:
-    #     voicevox_engine = subprocess.Popen(config['voice_vox_path'] + 'run.exe', shell=True)
-    #     print('Voicevox engine started')
-    # except Exception as e:
-    #     raise type(e)(str(e))
+    with open('config.json', 'r') as f:
+        config = json.load(f)
+    try:
+        # Run the exe file and store the output in a variable
+        result = subprocess.run(f'{config["voice_vox_path"]}/run.exe', capture_output=True)
+
+        # Print the output of the exe file
+        print(result.stdout.decode('utf-8'))
+        print('Voicevox engine started')
+    except Exception as e:
+        raise type(e)(str(e))
 
     record_audio.record_audio(audio_record)
     audio_to_text.audio_to_text(audio_record, text_not_translated)
