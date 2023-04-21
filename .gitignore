@@ -134,3 +134,7 @@ audio_query.json
 audio_query.wav
 text_translated.txt
 text_not_translated.txt
+
+# Test files
+test.*
+test*

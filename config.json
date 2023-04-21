@@ -1,5 +1,12 @@
 {
     "language": "ja",
     "speaker": "1",
-    "voice_vox_path": "F:/voicevox_engine-windows-nvidia-0.14.4.7z/windows-nvidia"
+    "voice_vox_path": "F:/voicevox_engine-windows-nvidia-0.14.4.7z/windows-nvidia",
+    "audio_record": "audios/audio_record.wav",
+    "audio_translated": "audios/audio_translated.wav",
+    "text_not_translated": "texts/text_not_translated.txt",
+    "text_translated": "texts/text_translated.txt",
+    "audio_json": "texts/audio_query.json",
+    "start_key": "ctrl + shift + alt + r",
+    "stop_key": "ctrl + shift + alt + s"
 }

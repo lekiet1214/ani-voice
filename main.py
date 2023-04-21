@@ -1,35 +1,28 @@
-import record_audio
-import audio_to_text
-import translate_text
-import text_to_voice
-import play_audio
-import json
-import subprocess
+from helpers import translate_text, text_to_voice, play_audio, record_audio, audio_to_text, start_voicevox
+import json, os, threading
 
-audio_record = 'audio_record.wav'
-audio_translated = 'audio_translated.wav'
-text_translated = 'text_translated.txt'
-text_not_translated = 'text_not_translated.txt'
-audio_json = 'audio_query.json'
-chunk = 1024
+config = json.load(open('config.json', 'r'))
 
-if __name__ == '__main__':
+audio_record = os.path.abspath(config['audio_record'])
+audio_translated = os.path.abspath(config['audio_translated'])
+text_translated = os.path.abspath(config['text_translated'])
+text_not_translated = os.path.abspath(config['text_not_translated'])
+audio_json = os.path.abspath(config['audio_json'])
 
-    # Start the voicevox engine
-    with open('config.json', 'r') as f:
-        config = json.load(f)
+
+def main():
     try:
-        # Run the exe file and store the output in a variable
-        result = subprocess.run(f'{config["voice_vox_path"]}/run.exe', capture_output=True)
-
-        # Print the output of the exe file
-        print(result.stdout.decode('utf-8'))
-        print('Voicevox engine started')
+        while True:
+            record_audio(audio_record)
+            audio_to_text(audio_record, text_not_translated)
+            translate_text(text_not_translated, text_translated)
+            text_to_voice(text_translated, audio_translated, audio_json)
+            play_audio(audio_translated)
+            print('Done\nWaiting for input...')
     except Exception as e:
         raise type(e)(str(e))
 
-    record_audio.record_audio(audio_record)
-    audio_to_text.audio_to_text(audio_record, text_not_translated)
-    translate_text.translate_text(text_not_translated, text_translated)
-    text_to_voice.text_to_voice(text_translated, audio_translated, audio_json)
-    play_audio.play_audio(audio_translated)
+
+if __name__ == '__main__':
+    threading.Thread(target=start_voicevox).start()
+    threading.Thread(target=main).start()
