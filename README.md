@@ -2,7 +2,7 @@
 ![Alt text](https://voicevox.hiroshiba.jp/static/4be83af8654ea36b6798a9b77591a6fb/c512e/top-illust-005.webp)
 ## About
 
-ani-voice is a software to turn your ugly voice into a cute anime girl voice.
+ani-voice is a software to turn your (not so) ugly voice into a cute anime girl voice.
 And also translate your voice into Japanese.
 
 ## Installing and Running
