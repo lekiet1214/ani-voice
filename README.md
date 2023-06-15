@@ -68,3 +68,17 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 [![Python application](https://github.com/lekiet1214/ani-voice/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/lekiet1214/ani-voice/actions/workflows/python-app.yml)
 [![pages-build-deployment](https://github.com/lekiet1214/ani-voice/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/lekiet1214/ani-voice/actions/workflows/pages/pages-build-deployment)
 [![CodeQL](https://github.com/lekiet1214/ani-voice/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/lekiet1214/ani-voice/actions/workflows/github-code-scanning/codeql)
+
+## License
+This software is licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
+
+## Acknowledgements
+The voicevox engine is developed by [VOICEVOX](https://voicevox.hiroshiba.jp/).
+
+## Future work
+- [ ] Implement output to native audio device
+- [ ] Make an UI
+- [ ] Make an installer
+- [ ] Add more speakers
+- [ ] Add more languages
+- [ ] Add more platforms
