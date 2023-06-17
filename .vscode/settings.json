@@ -1,4 +1,0 @@
-{
-    "sarif-viewer.connectToGithubCodeScanning": "on",
-    "python.analysis.typeCheckingMode": "basic"
-}
