@@ -1,23 +1,35 @@
 export default defineAppConfig({
-  alpine: {
-    title: "ani-voice",
-    description: "A voice changer and translator software for all",
-    footer: {
-      navigation: true, // possible value are : true | false
-      alignment: "center", // possible value are : 'none' | 'left' | 'center' | 'right'
-      message: "Follow me on", // string that will be displayed in the footer (leave empty or delete to disable)
-    },
+  docus: {
+    title: 'ani-voice',
+    description: 'A voice changer and translator ',
+    image: 'https://camo.githubusercontent.com/abf0e53807e9a11ca4532eb408cbdfa91a050b2b70bf617f03db31c95b26cd1e/68747470733a2f2f766f696365766f782e6869726f73686962612e6a702f7374617469632f34626538336166383635346561333662363739386139623737353931613666622f63353132652f746f702d696c6c7573742d3030352e77656270',
+    url: 'https://ani-voice.nhonho.xyz',
     socials: {
-      twitter: "lekiet0101",
-      instagram: "lekiet0101",
-      linkedin: {
-        icon: "uil:linkedin",
-        label: "LinkedIn",
-        href: "https://www.linkedin.com/in/lekiet0101/",
-      },
+      twitter: 'lekiet0101',
+      github: 'lekiet1214/ani-voice'
     },
-    form: {
-      successMessage: "Message sent. Thank you!",
+    aside: {
+      level: 0,
+      collapsed: false,
+      exclude: []
     },
-  },
-});
+    main: {
+      padded: true,
+      fluid: true
+    },
+    header: {
+      title: 'ani-voice',
+      logo: false,
+      showLinkIcon: false,
+      exclude: [],
+      fluid: true
+    },
+    footer: {
+      credits:{
+        icon:'',
+        text:'made with love ❤️',
+        href:'#'
+      }
+    }
+  }
+})

@@ -1,9 +1,8 @@
 name = "playground"
-main = "./.output/server/index.mjs"
+main = "./.nuxt/dist/server/server.mjs"
 workers_dev = true
 compatibility_date = "2022-09-10"
-account_id = "2c19dd9affff5687b1c245d87f182019"
-route = "<mainly useful when you want to setup custom domains (optional too)>"
+
 
 [site]
 bucket = ".output/public"

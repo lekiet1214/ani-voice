@@ -1,5 +1,5 @@
 {
-  "name": "alpine-starter",
+  "name": "docus-starter",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,11 +7,10 @@
     "build": "nuxi build",
     "generate": "nuxi generate",
     "preview": "nuxi preview",
-    "lint": "eslint .",
-    "prepare": "nuxi prepare"
+    "lint": "eslint ."
   },
   "devDependencies": {
-    "@nuxt-themes/alpine": "^1.6.0",
+    "@nuxt-themes/docus": "^1.12.1",
     "@nuxt/devtools": "^0.5.5",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxtjs/plausible": "^0.2.1",
@@ -21,8 +20,6 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.5.3",
-    "postcss": "^8.4.24",
-    "vite": "^4.3.9",
     "vue": "^3.3.4"
   }
 }
