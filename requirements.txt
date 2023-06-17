@@ -1,7 +1,0 @@
-keyboard==0.13.5
-mtranslate==1.8
-pyAudio==0.2.13
-requests==2.28.2
-sounddevice==0.4.6
-soundfile==0.12.1
-SpeechRecognition==3.10.0
