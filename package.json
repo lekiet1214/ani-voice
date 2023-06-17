@@ -7,7 +7,8 @@
     "build": "nuxi build",
     "generate": "nuxi generate",
     "preview": "nuxi preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "nuxi prepare"
   },
   "devDependencies": {
     "@nuxt-themes/alpine": "^1.6.0",
@@ -19,6 +20,7 @@
     "nuxt": "^3.5.3"
   },
   "dependencies": {
+    "@nuxt/kit": "^3.5.3",
     "postcss": "^8.4.24",
     "vite": "^4.3.9",
     "vue": "^3.3.4"

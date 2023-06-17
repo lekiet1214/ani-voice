@@ -8,9 +8,8 @@ export default defineNuxtConfig({
     // https://github.com/nuxt/devtools
     '@nuxt/devtools'
   ],
-  buildDir: 'dist',
-  generate: {
-    dir: 'dist',
-    subFolders: false
-  }
+  nitro: {
+    // Nitro options
+    preset: 'cloudflare',
+  },
 })
