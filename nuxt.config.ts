@@ -8,5 +8,9 @@ export default defineNuxtConfig({
     // https://github.com/nuxt/devtools
     '@nuxt/devtools'
   ],
-  buildDir: 'dist'
+  buildDir: 'dist',
+  generate: {
+    dir: 'dist',
+    subFolders: false
+  }
 })
